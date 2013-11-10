@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/checkedTextView3"
+        android:layout_marginTop="19dp"
+        android:gravity="right"
+        android:text="@string/label_id" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/checkedTextView1"
+        android:layout_below="@+id/checkedTextView1"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:text="@string/label_name" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkedTextView2"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_semester" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/checkedTextView3"
+        android:layout_below="@+id/checkedTextView3"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:text="@string/label_course" />
+
+    <CheckedTextView
+        android:id="@+id/textView_value_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkedTextView1"
+        android:layout_alignBottom="@+id/checkedTextView1"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/checkedTextView1"
+        android:text="@string/label_placeholder" />
+
+    <Button
+        android:id="@+id/button_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkedTextView4"
+        android:layout_marginTop="30dp"
+        android:text="@string/label_previous" />
+
+    <TextView
+        android:id="@+id/textView_recordNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button_previous"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/label_placeholder"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_previous"
+        android:layout_alignBottom="@+id/button_previous"
+        android:layout_alignParentRight="true"
+        android:text="@string/label_next" />
+
+    <CheckedTextView
+        android:id="@+id/textView_value_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkedTextView3"
+        android:layout_alignLeft="@+id/textView_value_id"
+        android:text="@string/label_placeholder" />
+
+    <CheckedTextView
+        android:id="@+id/textView_value_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_previous"
+        android:layout_alignLeft="@+id/textView_value_name"
+        android:text="@string/label_placeholder" />
+
+    <CheckedTextView
+        android:id="@+id/textView_value_samester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkedTextView4"
+        android:layout_alignLeft="@+id/textView_value_course"
+        android:text="@string/label_placeholder" />
+
+</RelativeLayout>
